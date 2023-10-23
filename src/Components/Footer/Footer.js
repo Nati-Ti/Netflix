@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FooterProp from './FooterProp'
 import './footer.css'
+import TranslateIcon from '@mui/icons-material/Translate';
 
 
 let col1 =['Questions? Contact us.', 'FAQ', 'Investor Relations', 'Privacy', 'Speed Test'];
@@ -37,6 +38,7 @@ function Footer() {
                 <FooterProp linkName={col4} />    
             </div>
             <div className='select-dropdown'>
+            <TranslateIcon className='select--dropdown__icon' fontSize="medium"/>
                 <select value={selectedLanguage} onChange={handleChangeLanguage}>
                     {languages.map((language) => (
                     <option key={language.code} value={language.code}>

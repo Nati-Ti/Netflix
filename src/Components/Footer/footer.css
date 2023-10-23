@@ -45,11 +45,16 @@ a:-webkit-any-link{
 }
 
 .select-dropdown {
+    display: flex;
     position: relative;
     background-color: #111;
     border-radius: 5px;
-    width: 100px;
+    width: 120px;
     margin-left: 12%;
+}
+
+.select--dropdown__icon{
+    margin: 4px 0 0 4px;
 }
 
 .select-dropdown select {

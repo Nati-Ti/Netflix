@@ -7,7 +7,7 @@ function FooterProp({linkName}) {
         <ul className='footer--links__wrapper'>
             {linkName.map((link)=>{
                 return (
-                <li className='footer--link'><a href={`/${link}`}>{link}</a></li>
+                <li className='footer--link' key={link}><a href={`/${link}`}>{link}</a></li>
             )})}
         </ul>
     )
